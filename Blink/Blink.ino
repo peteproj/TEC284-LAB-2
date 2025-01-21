@@ -29,13 +29,19 @@ void setup() {
 //  if(timesToBlink > 4){
 //    digitalWrite(LED_BUILTIN, HIGH);
 //  }
-  for (int i = 0; i < timesToBlink; i++) {
+//  for (int i = 0; i < timesToBlink; i++) {
+//    digitalWrite(LED_BUILTIN, HIGH); 
+//    delay(500);                
+//    digitalWrite(LED_BUILTIN, LOW); 
+//    delay(500);                
+//  }
+  while (timesToBlink > 0) {
     digitalWrite(LED_BUILTIN, HIGH); 
-    delay(500);                
+    delay(500);               
     digitalWrite(LED_BUILTIN, LOW); 
     delay(500);                
+    timesToBlink--;           
   }
-
   // initialize digital pin LED_BUILTIN as an output.
   pinMode(LED_BUILTIN, OUTPUT);
 }
