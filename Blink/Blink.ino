@@ -30,11 +30,12 @@ void setup() {
 //    digitalWrite(LED_BUILTIN, HIGH);
 //  }
   for (int i = 0; i < timesToBlink; i++) {
-    digitalWrite(ledPin, HIGH); 
+    digitalWrite(LED_BUILTIN, HIGH); 
     delay(500);                
-    digitalWrite(ledPin, LOW); 
+    digitalWrite(LED_BUILTIN, LOW); 
     delay(500);                
   }
+
   // initialize digital pin LED_BUILTIN as an output.
   pinMode(LED_BUILTIN, OUTPUT);
 }
