@@ -26,8 +26,14 @@
 void setup() {
   int timesToBlink = 1;
   timesToBlink = timesToBlink * 3 + 1;
-  if(timesToBlink > 4){
-    digitalWrite(LED_BUILTIN, HIGH);
+//  if(timesToBlink > 4){
+//    digitalWrite(LED_BUILTIN, HIGH);
+//  }
+  for (int i = 0; i < timesToBlink; i++) {
+    digitalWrite(ledPin, HIGH); 
+    delay(500);                
+    digitalWrite(ledPin, LOW); 
+    delay(500);                
   }
   // initialize digital pin LED_BUILTIN as an output.
   pinMode(LED_BUILTIN, OUTPUT);
